@@ -1,5 +1,14 @@
 {
     "name": "Night Light",
     "version": "0.1" ,
-    "manifest_version":2
+    "manifest_version":3,
+    "action":{
+        "default_popup":"Pop_up.html",
+        "default_icon":"Logo_128.png"
+    },
+    "icons":{
+        "128":"Logo_128.png",
+        "256":"Logo_256.png"
+    },
+    "permissions":["activeTab"]
 }
