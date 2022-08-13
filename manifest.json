@@ -1,8 +1,15 @@
 {
-    "name": "Night Light",
+    "name": "Dark Light",
     "version": "0.1" ,
     "manifest_version":3,
+    "background.service_worker":{
+        "scripts":[
+            "popup.js"
+        ],
+        "persistent":true
+    },
     "action":{
+        "default_title":"Dark Light",
         "default_popup":"Pop_up.html",
         "default_icon":"Logo_128.png"
     },
@@ -10,5 +17,10 @@
         "128":"Logo_128.png",
         "256":"Logo_256.png"
     },
-    "permissions":["activeTab"]
+    "permissions":[
+    "activeTab",
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+]
 }
